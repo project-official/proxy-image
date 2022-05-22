@@ -3,7 +3,7 @@ FROM amazoncorretto:17-alpine3.15-jdk
 ARG VELOCITY_SECRET
 ARG VELOCITY_VERSION=3.1.2
 ARG VELOCITY_BUILD
-ARG MOTD="A Velocity Server"
+ARG MOTD="&6========  &e&lCUBE Connect &r&a[1.9.x-1.18.x] &6  ========\n             &bMinecraft Server with Velocity"
 
 WORKDIR /proxy
 
