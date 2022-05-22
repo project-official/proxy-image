@@ -12,6 +12,7 @@ ADD ./scripts/* /proxy/
 
 RUN wget https://api.papermc.io/v2/projects/velocity/versions/${VELOCITY_VERSION}-SNAPSHOT/builds/${VELOCITY_BUILD}/downloads/velocity-${VELOCITY_VERSION}-SNAPSHOT-${VELOCITY_BUILD}.jar
 RUN mv velocity-${VELOCITY_VERSION}-SNAPSHOT-${VELOCITY_BUILD}.jar velocity.jar
+RUN chmod +x /proxy/run.sh
 
 EXPOSE 25565:25565
 
