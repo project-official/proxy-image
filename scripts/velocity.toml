@@ -60,6 +60,7 @@ ping-passthrough = "DISABLED"
     wild = "wild:25565"
     asdf = "asdf:25565"
     server = "server:25565"
+	cottonball = "cottonball:25565"
     #old_lobby = "old_lobby:25565"
 	# In what order we should try servers when a player logs in or is kicked from a server.
 	try = ["lobby"]
@@ -69,6 +70,7 @@ ping-passthrough = "DISABLED"
     "asdf08.cube1.dev" = [ "asdf" ]
     "mc.projecttl.net" = [ "server" ]
     "projecttl.kro.kr" = [ "mc" ]
+	"cottonball.r2turntrue.xyz" = [ "cottonball" ]
 
 [advanced]
 	# How large a Minecraft packet has to be before we compress it. Setting this to zero will
