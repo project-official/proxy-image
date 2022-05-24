@@ -17,6 +17,9 @@ RUN mkdir /proxy/plugins
 # 5.4.25
 RUN wget https://download.luckperms.net/1433/velocity/LuckPerms-Velocity-5.4.25.jar -P /proxy/plugins
 
+RUN mkdir /proxy/plugins/luckperms
+ADD ./luckperms-h2.mv.db /proxy/plugins/luckperms
+
 EXPOSE 25565:25565
 
 ENTRYPOINT [ "/proxy/run.sh" ]
