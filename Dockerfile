@@ -13,6 +13,9 @@ ADD ./scripts/* /proxy/
 RUN wget https://api.papermc.io/v2/projects/velocity/versions/${VELOCITY_VERSION}-SNAPSHOT/builds/${VELOCITY_BUILD}/downloads/velocity-${VELOCITY_VERSION}-SNAPSHOT-${VELOCITY_BUILD}.jar
 RUN mv velocity-${VELOCITY_VERSION}-SNAPSHOT-${VELOCITY_BUILD}.jar velocity.jar
 RUN chmod +x /proxy/run.sh
+RUN mkdir /proxy/plugins
+# 5.4.25
+RUN wget https://download.luckperms.net/1433/velocity/LuckPerms-Velocity-5.4.25.jar -P /proxy/plugins
 
 EXPOSE 25565:25565
 
