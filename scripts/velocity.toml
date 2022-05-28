@@ -56,10 +56,8 @@ ping-passthrough = "DISABLED"
 	# Configure your servers here. Each key represents the server's name, and the value
 	# represents the IP address of the server to connect to.
 	lobby = "lobby:25565"
-    mc = "mc:25565"
-    wild = "wild:25565"
-    asdf = "asdf:25565"
-    server = "server:25565"
+	project1="localhost:10001"
+   asdf = "asdf:25565"
 	cottonball = "cottonball:25565"
     #old_lobby = "old_lobby:25565"
 	# In what order we should try servers when a player logs in or is kicked from a server.
@@ -68,8 +66,7 @@ ping-passthrough = "DISABLED"
 [forced-hosts]
 	# Configure your forced hosts here.
     "asdf08.cube1.dev" = [ "asdf" ]
-    "mc.projecttl.net" = [ "server" ]
-    "projecttl.kro.kr" = [ "mc" ]
+    "mc.projecttl.net" = [ "project1" ]
 	"cottonball.r2turntrue.xyz" = [ "cottonball" ]
 
 [advanced]
