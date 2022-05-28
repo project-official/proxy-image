@@ -56,7 +56,7 @@ ping-passthrough = "DISABLED"
 	# Configure your servers here. Each key represents the server's name, and the value
 	# represents the IP address of the server to connect to.
 	lobby = "lobby:25565"
-	project1="localhost:10001"
+	project1="mc.projecttl.net:10001"
    asdf = "asdf:25565"
 	cottonball = "cottonball:25565"
     #old_lobby = "old_lobby:25565"
