@@ -14,8 +14,8 @@ RUN wget https://api.papermc.io/v2/projects/velocity/versions/${VELOCITY_VERSION
 RUN mv velocity-${VELOCITY_VERSION}-SNAPSHOT-${VELOCITY_BUILD}.jar velocity.jar
 RUN chmod +x /proxy/run.sh
 RUN mkdir /proxy/plugins
-# 5.4.25
-RUN wget https://download.luckperms.net/1433/velocity/LuckPerms-Velocity-5.4.25.jar -P /proxy/plugins
+# 5.4.30
+RUN wget https://download.luckperms.net/1438/velocity/LuckPerms-Velocity-5.4.30.jar -P /proxy/plugins
 
 RUN mkdir /proxy/plugins/luckperms
 ADD ./luckperms-h2.mv.db /proxy/plugins/luckperms
