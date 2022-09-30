@@ -17,7 +17,7 @@ RUN mkdir /proxy/plugins
 RUN wget https://download.luckperms.net/1453/velocity/LuckPerms-Velocity-5.4.46.jar -P /proxy/plugins
 RUN wget https://github.com/ViaVersion/ViaVersion/releases/download/4.4.2/ViaVersion-4.4.2.jar -P /proxy/plugins
 RUN wget https://cloud.projecttl.net/s/WFSLitPsCBrpqbQ/download/project-proxy.jar -P /proxy/plugins
-RUN wget https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/1181/artifact/bootstrap/velocity/target/Geyser-Velocity.jar -P /proxy/plugins
+RUN wget https://ci.opencollab.dev//job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/velocity/build/libs/Geyser-Velocity.jar -P /proxy/plugins
 RUN wget https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/lastSuccessfulBuild/artifact/velocity/build/libs/floodgate-velocity.jar -P /proxy/plugins
 
 RUN mkdir /proxy/plugins/luckperms
