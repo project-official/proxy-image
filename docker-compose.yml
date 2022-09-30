@@ -3,10 +3,12 @@ services:
     image: 'proxy'
     ports:
       - 25565:25565
+      - 19132:19132/udp
     networks:
       - mc
     tty: true
     container_name: proxy
+    restart: always
 
 networks:
   mc:

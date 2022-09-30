@@ -5,7 +5,7 @@ if ! [ -f "ran.txt" ]; then
     #sed -i "s/{motd}/$MOTD/" velocity.toml
     #sed -i 's@{motd}@'"$MOTD"'@' velocity.toml
     #sed -i 's@{secret}@'"$VELOCITY_SECRET"'@' velocity.toml
-    sed -i "s/{secret}/$VELOCITY_SECRET/" velocity.toml
+    sed -i "s/{secret}/$VELOCITY_SECRET/" forwarding.secret
     echo "B" > ran.txt
 fi
 
