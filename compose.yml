@@ -10,7 +10,7 @@ services:
       - "25565:25565"
       - "19132:19132/udp"
     networks:
-      - "containers"
+      - "apps"
     privileged: true
     tty: true
     volumes:
@@ -19,5 +19,5 @@ services:
     restart: "always"
 
 networks:
-  containers:
+  apps:
     external: true
