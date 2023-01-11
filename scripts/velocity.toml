@@ -71,13 +71,10 @@ enable-player-address-logging = true
 
 [servers]
 lobby = "lobby:25565"
+build = "build:25565"
+race = "race:25565"
 tir = "server-builder:25565"
 asdf = "server-builder:25566"
-build = "build:25565"
-newyear = "newyear:25565"
-race = "race:25565"
-pit = "pit:25565"
-personal = "personal:25565"
 playground = "playground:25565"
 
 # In what order we should try servers when a player logs in or is kicked from a server.
@@ -86,10 +83,6 @@ try = [
 ]
 
 [forced-hosts]
-"tir.projecttl.net" = [ "tir" ]
-"asdf08.cube1.dev" = [ "asdf" ]
-"mc.wh64.dev" = [ "personal" ]
-"newyear.projecttl.net" = [ "newyear" ]
 
 [advanced]
 # How large a Minecraft packet has to be before we compress it. Setting this to zero will
