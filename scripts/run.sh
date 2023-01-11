@@ -9,4 +9,4 @@ if ! [ -f "ran.txt" ]; then
     echo "B" > ran.txt
 fi
 
-java -Xmx1G -jar velocity.jar
+java -Xmx2G -jar velocity.jar

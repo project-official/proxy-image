@@ -1,15 +1,23 @@
-services:
+version: "3.9"
+
+services: 
   proxy:
-    image: 'proxy'
+    image: "mcproxy"
+    build:
+      context: .
+      dockerfile: ./Dockerfile
     ports:
-      - 25565:25565
-      - 19132:19132/udp
+      - "25565:25565"
+      - "19132:19132/udp"
     networks:
-      - mc
+      - "containers"
+    privileged: true
     tty: true
-    container_name: proxy
-    restart: always
+    volumes:
+      - "./plugins:/opt/proxy/plugins"
+    container_name: "mcproxy"
+    restart: "always"
 
 networks:
-  mc:
+  containers:
     external: true

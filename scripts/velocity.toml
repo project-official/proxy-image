@@ -70,16 +70,15 @@ ping-passthrough = "DISABLED"
 enable-player-address-logging = true
 
 [servers]
-# Configure your servers here. Each key represents the server's name, and the value
-# represents the IP address of the server to connect to.
 lobby = "lobby:25565"
-asdf = "asdf:25565"
+tir = "server-builder:25565"
+asdf = "server-builder:25566"
 build = "build:25565"
-wild = "wild:25565"
-farm = "farm:25565"
+newyear = "newyear:25565"
 race = "race:25565"
 pit = "pit:25565"
-elytra = "elytra:25565"
+personal = "personal:25565"
+playground = "playground:25565"
 
 # In what order we should try servers when a player logs in or is kicked from a server.
 try = [
@@ -87,8 +86,10 @@ try = [
 ]
 
 [forced-hosts]
-# Configure your forced hosts here.
+"tir.projecttl.net" = [ "tir" ]
 "asdf08.cube1.dev" = [ "asdf" ]
+"mc.wh64.dev" = [ "personal" ]
+"newyear.projecttl.net" = [ "newyear" ]
 
 [advanced]
 # How large a Minecraft packet has to be before we compress it. Setting this to zero will
