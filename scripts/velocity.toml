@@ -73,8 +73,9 @@ enable-player-address-logging = true
 lobby = "lobby:25565"
 build = "build:25565"
 race = "race:25565"
-tir = "server-builder:25565"
-asdf = "server-builder:25566"
+tir = "mc-panel:25565"
+asdf = "mc-panel:25566"
+noeul = "mc-panel:25567"
 playground = "playground:25565"
 
 # In what order we should try servers when a player logs in or is kicked from a server.
