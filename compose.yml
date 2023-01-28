@@ -12,6 +12,7 @@ services:
     networks:
       - "apps"
     privileged: true
+    stdin_open: true
     tty: true
     volumes:
       - "./plugins:/opt/proxy/plugins"
