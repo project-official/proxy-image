@@ -6,7 +6,7 @@ bind = "0.0.0.0:25565"
 
 # What should be the MOTD? This gets displayed when the player adds your server to
 # their server list. Legacy color codes and JSON are accepted.
-motd = "&bProject_TL's Personal Server"
+motd = "&bProject_IO's Personal Server"
 
 # What should we display for the maximum number of players? (Velocity does not support a cap
 # on the number of players online.)
@@ -70,22 +70,28 @@ ping-passthrough = "DISABLED"
 enable-player-address-logging = true
 
 [servers]
-lobby = "lobby:25565"
-limbo = "limbo:25565"
+# Configure your servers here. Each key represents the server's name, and the value
+# represents the IP address of the server to connect to.
+#lobby = "lobby:25565"
+lobby = "limbo:25565"
 build = "build:25565"
 race = "race:25565"
-tir = "mc-panel:25565"
-asdf = "mc-panel:25566"
-noeul = "mc-panel:25567"
+tir = "tir:25565"
+asdf = "asdf:25565"
+noeul = "bd19fc48.secure.mcv.kr:10004"
+noeul_test = "noeul:25565"
+sonic = "asdf:25566"
+mod = "mod:25565"
 playground = "playground:25565"
 
 # In what order we should try servers when a player logs in or is kicked from a server.
 try = [
-  "lobby",
-  "limbo"
+	"lobby"
 ]
 
 [forced-hosts]
+# Configure your forced hosts here.
+"tir.mc.projecttl.net" = ["tir"]
 
 [advanced]
 # How large a Minecraft packet has to be before we compress it. Setting this to zero will
