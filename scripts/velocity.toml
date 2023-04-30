@@ -80,6 +80,7 @@ tir = "tir:25565"
 asdf = "asdf:25565"
 noeul = "bd19fc48.secure.mcv.kr:10004"
 noeul_test = "noeul:25565"
+bxul = "bxul:25565"
 sonic = "asdf:25566"
 mod = "mod:25565"
 playground = "playground:25565"
@@ -92,6 +93,7 @@ try = [
 [forced-hosts]
 # Configure your forced hosts here.
 "tir.mc.projecttl.net" = ["tir"]
+"umma.mcv.kr" = ["bxul"]
 
 [advanced]
 # How large a Minecraft packet has to be before we compress it. Setting this to zero will
